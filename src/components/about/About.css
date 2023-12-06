@@ -1,0 +1,12 @@
+.about {
+    margin-top: 5rem;
+}
+
+.about-container {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 1rem;
+}

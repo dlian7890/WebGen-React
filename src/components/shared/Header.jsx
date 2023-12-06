@@ -1,23 +1,29 @@
 import React from 'react';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import './Header.css';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Box class='header'>
-            <Typography
-                sx={{ marginLeft: '2rem' }}
-                variant='h4'
-                component='div'
-            >
-                WebGen
-            </Typography>
-            <Button sx={{ marginRight: '1rem' }} color='inherit'>
-                About
-            </Button>
-        </Box>
+        <div class='header'>
+            <div className='header-container'>
+                <NavLink to='/' className='nav-link'>
+                    <Typography
+                        sx={{ marginLeft: '2rem' }}
+                        variant='h4'
+                        component='div'
+                    >
+                        WebGen
+                    </Typography>
+                </NavLink>
+                <NavLink to='/about' className='nav-link'>
+                    <Button sx={{ marginRight: '1rem' }} color='inherit'>
+                        About
+                    </Button>
+                </NavLink>
+            </div>
+        </div>
     );
 };
 
